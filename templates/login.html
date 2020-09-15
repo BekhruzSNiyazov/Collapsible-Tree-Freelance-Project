@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Sign in to Word Tree{% endblock %}
+{% block body %}
+	<center>
+		<form action="/logging" method="POST">
+			<h1 style="margin-top: 8%; margin-bottom: 1.5%;">Sign in</h1>
+			<input type="email" name="email" placeholder="Email" style="margin: 0.5%;;"><br>
+			<input type="password" name="password" placeholder="Password" style="margin: 0.5%; margin-bottom: 1.5%;"><br>
+			<button class="button" style="margin-bottom: 1%;" type="submit">Sign in </button><br>
+			<span class="text-muted">Don't have an account? <a class="color" href="/signup">Sign up here</a>.</span>
+		</form>
+	</center>
+{% endblock %}
